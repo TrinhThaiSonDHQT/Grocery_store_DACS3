@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".NewProductsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="horizontal"
+       android:background="#FDE396"
+       android:layout_height="wrap_content">
+       <ImageView
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:layout_marginTop="3dp"
+           android:src="@drawable/transport"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginTop="3dp"
+           android:fontFamily="@font/andika_new_basic"
+           android:text="Don't miss the 5% discount code"
+           android:textAlignment="center"
+           android:textSize="18dp"
+           android:textStyle="bold" />
+
+
+   </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constaint2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="45dp"
+        android:layout_height="wrap_content">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.018" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/linerlayout1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#FDE396"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buy_now"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Buy Now"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="#E82828"
+             />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:paddingTop="9dp"
+            android:fontFamily="@font/andika"
+            android:text="Total Price : 0 VNĐ"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linerlayout2"
+        android:layout_above="@id/linerlayout1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/voucher"/>
+
+        <EditText
+            android:id="@+id/voucher"
+            android:layout_width="310dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:background="@color/white"
+            android:fontFamily="@font/andika"
+            android:hint="Please Enter Voucher"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/clickdiscount"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_menu_send"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

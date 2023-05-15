@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.PlacedOrderActivity">
+
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_marginTop="50dp"
+       android:orientation="horizontal">
+
+      <ImageView
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          android:src="@drawable/moneybag" />
+      <TextView
+          android:id="@+id/totalmoney"
+          android:layout_width="wrap_content"
+          android:text="25000"
+          android:textColor="@color/black"
+          android:textSize="25dp"
+          android:textStyle="bold"
+          android:fontFamily="@font/andika"
+          android:layout_gravity="center"
+          android:layout_marginLeft="10dp"
+          android:layout_height="wrap_content"/>
+   </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_marginTop="50dp"
+       android:orientation="horizontal">
+
+      <ImageView
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          android:src="@drawable/phonecall" />
+      <EditText
+          android:id="@+id/phonenumber"
+          android:layout_width="300dp"
+          android:hint="Enter Phone Number"
+          android:layout_marginLeft="10dp"
+          android:layout_height="match_parent"/>
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_marginTop="50dp"
+       android:orientation="horizontal">
+
+      <ImageView
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          android:src="@drawable/gmail" />
+      <EditText
+          android:id="@+id/gmail"
+          android:layout_width="300dp"
+          android:hint="Enter Gmail"
+          android:layout_marginLeft="10dp"
+          android:layout_height="match_parent"/>
+   </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_marginTop="50dp"
+       android:orientation="horizontal">
+
+      <ImageView
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          android:src="@drawable/placeholder" />
+      <EditText
+          android:layout_width="300dp"
+          android:id="@+id/delivery"
+          android:layout_marginLeft="10dp"
+          android:hint="Delivery Address"
+          android:layout_height="match_parent"/>
+   </LinearLayout>
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/directpayment"
+       android:layout_width="200dp"
+       android:layout_height="wrap_content"
+       android:background="@drawable/colorbutton"
+       android:text="Direct Payment"
+      android:layout_marginTop="50dp"
+      android:layout_gravity="center"
+       android:textColor="@color/white"/>
+   <androidx.appcompat.widget.AppCompatButton
+       android:layout_width="250dp"
+      android:background="#2196F3"
+      android:textColor="@color/white"
+      android:layout_marginTop="50dp"
+      android:layout_gravity="center"
+       android:layout_height="wrap_content"
+      android:text="Payment With ZaloPay"/>
+
+
+
+</LinearLayout>
